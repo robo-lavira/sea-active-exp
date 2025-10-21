@@ -144,31 +144,6 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown (You can fill this in later) -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="#" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 1</h5>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
   <section class="hero">
     <div class="hero-body">
@@ -209,65 +184,105 @@
 <!-- Overview and Pipeline Images -->
 <section class="hero is-small">
     <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Method</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-         <div class="item">
-          <!-- TODO: Replace "overview.png" with your actual overview image file in the static/images folder -->
-          <img src="static/images/overview.png" alt="SEA method overview" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">
-            An overview of our proposed SEA framework.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- TODO: Replace "pipeline.png" with your actual pipeline image file in the static/images folder -->
-          <img src="static/images/pipeline.png" alt="Exploration pipeline visualization" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">
-            The detailed pipeline of our iterative prediction-exploration process.
-          </h2>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full has-text-centered">
+                <h2 class="title is-3">Method</h2>
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item">
+                        <!-- TODO: Replace "overview.png" with your actual overview image file in the static/images folder -->
+                        <img src="static/images/overview.png" alt="SEA method overview" loading="lazy"/>
+                        <h2 class="subtitle has-text-centered">
+                        An overview of our proposed SEA framework.
+                        </h2>
+                    </div>
+                    <div class="item">
+                        <!-- TODO: Replace "pipeline.png" with your actual pipeline image file in the static/images folder -->
+                        <img src="static/images/pipeline.png" alt="Exploration pipeline visualization" loading="lazy"/>
+                        <h2 class="subtitle has-text-centered">
+                        The detailed pipeline of our iterative prediction-exploration process.
+                        </h2>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   </div>
-  </div>
-  </section>
-  <!-- End Image carousel -->
+</section>
+<!-- End Image carousel -->
 
-
-<!-- Real-World Experiments Videos -->
+<!-- Simulation Experiments Videos -->
 <section class="hero is-small is-light">
     <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Real-World Experiments</h2>
-        <div id="video-carousel" class="carousel results-carousel">
-          <div class="item">
-            <!-- TODO: Add poster image for better preview and replace video file -->
-            <video poster="" controls muted loop height="100%" preload="metadata">
-              <!-- TODO: Replace with your first experiment video file in static/videos folder -->
-              <source src="static/videos/real_exp_01.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">Experiment 1</h2>
-          </div>
-          <div class="item">
-            <!-- TODO: Add poster image for better preview and replace video file -->
-            <video poster="" controls muted loop height="100%" preload="metadata">
-              <!-- TODO: Replace with your second experiment video file in static/videos folder -->
-              <source src="static/videos/real_exp_02.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">Experiment 2</h2>
-          </div>
-          <div class="item">
-            <!-- TODO: Add poster image for better preview and replace video file -->
-            <video poster="" controls muted loop height="100%" preload="metadata">
-              <!-- TODO: Replace with your third experiment video file in static/videos folder -->
-              <source src="static/videos/real_exp_03.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">Experiment 3</h2>
-          </div>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full has-text-centered">
+                <h2 class="title is-3">Simulation Experiments</h2>
+                <div id="simulation-carousel" class="carousel results-carousel">
+                  <div class="item">
+                    <!-- TODO: Add poster image for better preview and replace video file -->
+                    <video poster="" controls muted loop height="100%" preload="metadata">
+                      <!-- TODO: Replace with your first experiment video file in static/videos folder -->
+                      <source src="static/videos/trajectory1.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="subtitle has-text-centered">Trajectory 1</h2>
+                  </div>
+                  <div class="item">
+                    <!-- TODO: Add poster image for better preview and replace video file -->
+                    <video poster="" controls muted loop height="100%" preload="metadata">
+                      <!-- TODO: Replace with your second experiment video file in static/videos folder -->
+                      <source src="static/videos/trajectory2.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="subtitle has-text-centered">Trajectory 2</h2>
+                  </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End video carousel -->
+</section>
+<!-- End video carousel -->
+
+
+<!-- Real-World Experiments Videos -->
+<section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full has-text-centered">
+                <h2 class="title is-3">Real-World Experiments</h2>
+                <div id="video-carousel" class="carousel results-carousel">
+                  <div class="item">
+                    <!-- TODO: Add poster image for better preview and replace video file -->
+                    <video poster="" controls muted loop height="100%" preload="metadata">
+                      <!-- TODO: Replace with your first experiment video file in static/videos folder -->
+                      <source src="static/videos/real_exp_01.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="subtitle has-text-centered">Experiment 1</h2>
+                  </div>
+                  <div class="item">
+                    <!-- TODO: Add poster image for better preview and replace video file -->
+                    <video poster="" controls muted loop height="100%" preload="metadata">
+                      <!-- TODO: Replace with your second experiment video file in static/videos folder -->
+                      <source src="static/videos/real_exp_02.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="subtitle has-text-centered">Experiment 2</h2>
+                  </div>
+                  <div class="item">
+                    <!-- TODO: Add poster image for better preview and replace video file -->
+                    <video poster="" controls muted loop height="100%" preload="metadata">
+                      <!-- TODO: Replace with your third experiment video file in static/videos folder -->
+                      <source src="static/videos/real_exp_03.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="subtitle has-text-centered">Experiment 3</h2>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- End video carousel -->
 
   <footer class="footer">
   <div class="container">
